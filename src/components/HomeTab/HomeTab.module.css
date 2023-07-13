@@ -1,0 +1,224 @@
+.HomeTabPage {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
+}
+
+.HomeTabMobileItem {
+  margin-top: 8px;
+  padding: 0px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  border-left: solid 5px var(--color-dashboard-text);
+}
+.HomeTabMobileItem:nth-child(1) {
+  margin-top: 0px;
+}
+
+.HomeTabMobileTableItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 48px;
+}
+.HomeTabMobileTableItem:nth-child(6) {
+  height: 53px;
+}
+
+.HomeTabMobileTableHeader {
+  color: var(--color-white);
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+
+  border-radius: 8px;
+}
+
+.HomeTabMobileTableBottomLine {
+  position: absolute;
+  width: 275px;
+  transform: translate(-20px, 24px);
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.HomeTabMobileTableValue {
+  color: var(--color-white);
+  text-align: right;
+  font-size: 16px;
+  font-family: Poppins;
+  hyphens: auto;
+}
+.income {
+  color: var(--color-yellow);
+  font-weight: 600;
+}
+.outcome {
+  color: var(--color-dashboard-text);
+  font-weight: 600;
+}
+.HomeTabMobileDeleteBtn {
+  display: inline-flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border: 0px;
+  border-radius: 18px;
+  background: var(--color-gradient-btn);
+
+  box-shadow: 1px 9px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.HomeTabMobileDeleteBtnText {
+  color: var(--color-white);
+  text-align: center;
+  font-size: 14px;
+  font-family: Poppins;
+  color: var(--color-white);
+}
+.HomeTabMobileEditBtn {
+  background-color: inherit;
+  border: 0px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+/* .HomeTabEditLink {
+
+} */
+.HomeTabMobileEditIcon {
+  max-width: 14px;
+  max-height: 14px;
+  fill: var(--color-white-60);
+}
+.HomeTabMobileEdit {
+  color: var(--color-white-60);
+  text-align: center;
+  font-size: 16px;
+  font-family: Poppins;
+  letter-spacing: 0.32px;
+}
+
+@media screen and (min-width: 768px) {
+  .HomeTabPage {
+    padding-top: 20px;
+    height: 392px;
+    overflow-y: scroll;
+  }
+  .HomeTabTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .HomeTabTableHead {
+    border-radius: 8px;
+    /* background: rgba(82, 59, 126, 0.6); */
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(50px);
+    height: 56px;
+  }
+  .HomeTabTableHeadRow {
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: left;
+    height: 56px;
+  }
+
+  .HomeTabTableHeadRow:nth-child(1) {
+    padding-left: 20px;
+  }
+
+  .HomeTabTableHeadRow:nth-child(2) {
+    text-align: center;
+  }
+
+  .HomeTabTableHeadRow:nth-child(5) {
+    text-align: right;
+  }
+
+  .HomeTabTableData {
+    color: var(--color-white);
+    font-size: 14px;
+    font-family: Poppins;
+    hyphens: auto;
+  }
+  .HomeTabTableData:nth-child(4) {
+    max-width: 180px;
+  }
+  .HomeTabTableData:nth-child(5) {
+    text-align: right;
+    font-weight: 600;
+  }
+  .HomeTabTableData:nth-child(2) {
+    font-size: 16px;
+    min-width: 88px;
+    text-align: center;
+  }
+  .HomeTabTableData:nth-child(1) {
+    padding-left: 20px;
+  }
+  .HomeTabTableData:nth-child(6) {
+    padding-right: 10px;
+  }
+  .income {
+    color: var(--color-yellow);
+  }
+  .outcome {
+    color: var(--color-dashboard-text);
+  }
+
+  .HomeTabTableRow {
+    border-bottom: solid 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    height: 54px;
+    padding-right: 20px;
+  }
+
+  .HomeTabTableRow:nth-last-child(1) {
+    border-bottom: none;
+  }
+  .HomeTabTableData:nth-last-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    height: 56px;
+    align-items: center;
+    gap: 8px;
+  }
+  .HomeTabTableDeleteBtn {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border: none;
+    border-radius: 18px;
+    background: var(--color-gradient-btn);
+    box-shadow: 1px 9px 15px 0px rgba(0, 0, 0, 0.2);
+    color: var(--color-white);
+  }
+  .HomeTabTableEditBtn {
+    background-color: inherit;
+    border: none;
+    width: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .HomeTabTableEditIcon {
+    max-width: 14px;
+    max-height: 14px;
+    fill: var(--color-white-60);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .HomeTabTable {
+    margin-left: auto;
+    width: 715px;
+  }
+  .HomeTabPage {
+    padding-top: 0px;
+    transform: translate(0px, 46px);
+  }
+}
